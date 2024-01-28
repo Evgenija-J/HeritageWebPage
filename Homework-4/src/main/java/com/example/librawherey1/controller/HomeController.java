@@ -9,7 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 import java.util.ArrayList;
 
 @Controller
-@RequestMapping("/index")
+@RequestMapping("/home")
 public class HomeController {
 
     private MonumentService monumentService;
@@ -22,7 +22,7 @@ public class HomeController {
     @ResponseBody
     ModelAndView index() {
 
-        ModelAndView mav = new ModelAndView("index");
+        ModelAndView mav = new ModelAndView("home");
 
         ArrayList<heritage_table> monuments = monumentService.findAll();
         mav.addObject("monuments", monuments);
