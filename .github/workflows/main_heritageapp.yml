@@ -25,7 +25,7 @@ jobs:
       - name: Print Current Directory
         run: |
           echo "Current Directory: $(pwd)"
-          ls -la
+          dir
 
       - name: Change to Project Directory
         run: cd Homework-4
@@ -33,7 +33,7 @@ jobs:
       - name: Print Current Directory After Change
         run: |
           echo "Current Directory: $(pwd)"
-          ls -la
+          dir
 
       - name: Build with Maven
         run: mvn clean install
