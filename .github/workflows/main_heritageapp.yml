@@ -27,8 +27,8 @@ jobs:
           echo "Current Directory: $(pwd)"
           dir
 
-      - name: Change to Project Directory
-        run: cd Homework-4
+      # - name: Change to Project Directory
+      #   run: cd Homework-4
 
       - name: Print Current Directory After Change
         run: |
