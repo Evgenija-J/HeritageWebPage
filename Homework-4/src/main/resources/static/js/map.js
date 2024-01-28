@@ -6488,7 +6488,7 @@ const monuments = {
         }]
 };
 
-// Function to create a marker and set up click event
+// Marker Management
 function createMarker(monument) {
     var marker = L.marker([monument.geometry.coordinates[1], monument.geometry.coordinates[0]])
         .bindPopup('<b>' + monument.properties.name)
@@ -6505,7 +6505,6 @@ function createMarker(monument) {
     });
 }
 
-// Function to close all popups
 function closePopups() {
     const popups = document.getElementsByClassName('leaflet-popup');
     if (popups[0]) {
@@ -6513,7 +6512,6 @@ function closePopups() {
     }
 }
 
-// Function to highlight a listing in the sidebar
 function highlightListing(id) {
     const listings = document.getElementsByClassName('listing');
     for (const listing of listings) {
@@ -6525,7 +6523,7 @@ function highlightListing(id) {
     }
 }
 
-//
+// Listings Management
 function updateListings(monument) {
     var listingsDiv = document.getElementById('listings');
     listingsDiv.innerHTML = ''; // Clear previous content
@@ -6546,7 +6544,7 @@ function getDescription(monument){
     return content;
 }
 
-// Function to filter and display listings on button click
+// Filter and Display Listings
 function filterAndDisplayListings() {
     var searchInput = document.getElementById('searchInput').value.toLowerCase();
     var listings = document.getElementById('listings');
@@ -6589,9 +6587,8 @@ function filterAndDisplayListings() {
     });
 }
 
-// Iterate over libraries and create markers
+// Initialization
 monuments.features.forEach(createMarker);
 
 // Add click event listener to search button
 document.getElementById('search-btn').addEventListener('click', filterAndDisplayListings);
-
