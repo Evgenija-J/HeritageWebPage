@@ -22,7 +22,7 @@ jobs:
           java-version: '17'
 
       - name: Change to Project Directory
-        run: cd HeritageWebPage/Homework-4
+        run: cd /Homework-4
 
       - name: Build with Maven
         run: mvn clean install
