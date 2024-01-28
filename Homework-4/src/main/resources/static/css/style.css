@@ -1,0 +1,318 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.full-page
+{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("../images/skopje.jpg");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+}
+nav
+{
+    flex: 1;
+    text-align: right;
+}
+nav ul
+{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li
+{
+    display: inline-block;
+    margin-right: 70px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: Bahnschrift;
+}
+nav ul li button
+{
+    font-size: 20px;
+    color: white;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: Bahnschrift;
+}
+nav ul li button:hover
+{
+    color: #870d0d;
+}
+nav ul li a:hover
+{
+    color: #870d0d;
+}
+#login-form
+{
+    display: none;
+}
+.form-box
+{
+    width:380px;
+    height:480px;
+    position:relative;
+    margin:2% auto;
+    background:rgba(0,0,0,0.3);
+    padding:10px;
+    overflow: hidden;
+}
+.button-box
+{
+    width:220px;
+    margin:35px auto;
+    position:relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+.toggle-btn
+{
+    padding:10px 30px;
+    cursor:pointer;
+    background:transparent;
+    border:0;
+    outline: none;
+    position: relative;
+}
+#btn
+{
+    top: 0;
+    left:0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: #F3C693;
+    border-radius: 30px;
+    transition: .5s;
+}
+.input-group-login
+{
+    top: 150px;
+    position:absolute;
+    width:280px;
+    transition:.5s;
+}
+.input-group-register
+{
+    top: 120px;
+    position:absolute;
+    width:280px;
+    transition:.5s;
+}
+.input-field
+{
+    width: 100%;
+    padding:10px 0;
+    margin:5px 0;
+    border-left:0;
+    border-top:0;
+    border-right:0;
+    border-bottom: 1px solid #999;
+    outline:none;
+    background: transparent;
+}
+.submit-btn
+{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: #F3C693;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+.check-box
+{
+    margin: 30px 10px 34px 0;
+}
+span
+{
+    color:#777;
+    font-size:12px;
+    bottom:68px;
+    position:absolute;
+}
+#login
+{
+    left:50px;
+}
+#login input
+{
+    color:white;
+    font-size: 15px;
+}
+#register
+{
+    left:450px;
+}
+#register input
+{
+    color:white;
+    font-size: 15px;
+}
+.logo_img
+{
+    position: absolute;
+    margin-left: -170px;
+    width: 400px;
+    height: 210px;
+    margin-top: 40px;
+}
+.pic_img
+{
+    position: absolute;
+    margin-left: -50px;
+    margin-bottom: 35px;
+    width: 40px;
+    height: 40px;
+}
+#app_name
+{
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 20px;
+    font-size: 50px;
+    font-family: Copperplate, serif;
+    color: darkred;
+}
+#aboutus_text, #contact_text
+{
+    position: absolute;
+    display: block;
+    font-size: 20px;
+    font-family: Bahnschrift;
+    color: darkred;
+    padding: 50px;
+    margin-top: 30px;
+}
+#aboutus_text p, #contact_text p
+{
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.35);
+    color: white;
+    padding: 15px;
+}
+#username
+{
+    position: absolute;
+    padding: 5px;
+    margin-left: 135px;
+    font-family: Bahnschrift;
+    font-size: 15px;
+}
+#map
+{
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    padding: 5px;
+    margin-left: 140px;
+    margin-top: 60px;
+    border: 4px solid rgba(0, 0, 0, 0.75);
+}
+#location-info
+{
+    position: absolute;
+    font-family: Bahnschrift;
+    font-size:15px;
+    width: 300px;
+    height: 200px;
+    padding: 5px;
+    margin-left: 770px;
+    margin-top: 190px;
+}
+.rating{
+    padding-top: 200px;
+    color: white;
+}
+.rating>span:before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0;
+}
+#searchInput
+{
+    position: absolute;
+    font-family: Bahnschrift;
+    font-size: 20px;
+    margin-left: 770px;
+    margin-top: 70px;
+    width: 400px;
+}
+#dropdown1
+{
+    position: absolute;
+    font-family: Bahnschrift;
+    font-size: 15px;
+    margin-left: 770px;
+    margin-top: 115px;
+    width: 400px;
+}
+#dropdown2
+{
+    position: absolute;
+    font-family: Bahnschrift;
+    font-size: 15px;
+    margin-left: 970px;
+    margin-top: 115px;
+    width: 400px;
+}
+select
+{
+    font-family: Bahnschrift;
+    font-size: 15px;
+    width: 150px;
+}
+#search-btn
+{
+    position: absolute;
+    font-family: Bahnschrift;
+    margin-left: 1180px;
+    margin-top: 70px;
+    font-size: 15px;
+    padding:4px;
+    cursor:pointer;
+    width: 90px;
+    background-color: rgba(0, 0, 0, 0.35);
+    border: 1px;
+    border-radius: 30px;
+}
+#listings
+{
+    position: absolute;
+    font-family: Bahnschrift;
+    color: white;
+    margin-left: 770px;
+    margin-top: 150px;
+    font-size: 15px;
+    padding:4px;
+    cursor:pointer;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.35);
+    border: 1px;
+}
+.scrollable-div {
+    overflow-y: auto;
+    max-height: 300px;
+}
