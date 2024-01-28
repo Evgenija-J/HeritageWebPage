@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div class="full-page">
+    <div class="navbar">
+        <img th:src="@{/images/logo.png}" class="logo_img">
+        <h1 id="app_name">Where To?</h1>
+        <nav>
+            <ul id="MenuItems">
+                <img th:src="@{/images/pic.png}" class="pic_img">
+                <li><a th:href="@{/home}">HOME</a></li>
+                <li><a th:href="@{/aboutus}">ABOUT US</a></li>
+                <li><a th:href="@{/contact}">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="contact_text">
+        <h2>Connect With Us</h2>
+        <p>We value your input and welcome you to be a part of our community.
+            Connect with us on social media, share your experiences, and let us know about any historical gems you'd like to see featured.
+            Together, we can make history come alive!</p>
+        <h2>Email:</h2>
+        <p>abc@gmail.com</p>
+        <h2>Telephone</h2>
+        <p>012 345 678</p>
+    </div>
+</div>
+</body>
+</html>

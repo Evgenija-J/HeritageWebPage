@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>About us</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div class="full-page">
+    <div class="navbar">
+        <img th:src="@{/images/logo.png}" class="logo_img">
+        <h1 id="app_name">Where To?</h1>
+        <nav>
+            <ul id="MenuItems">
+                <img th:src="@{/images/pic.png}" class="pic_img">
+                <li><a th:href="@{/home}">HOME</a></li>
+                <li><a th:href="@{/aboutus}">ABOUT US</a></li>
+                <li><a th:href="@{/contact}">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="aboutus_text">
+        <p>Welcome to - "WHERE TO?" - your go-to destination for discovering historical landmarks and monuments!
+            We are passionate about preserving and sharing the rich history embedded in various locations around Macedonia.</p>
+
+        <h2>Our Mission</h2>
+        <p>Our mission is to make history accessible to everyone.
+            We believe in the power of exploration and education,
+            and we strive to create a platform where users can seamlessly navigate through historical sites,
+            learn about their significance, and plan their visits.</p>
+
+        <h2>What We Offer</h2>
+        <p>Explore a curated collection of landmarks, monuments, and other historical sites.
+            Each entry provides detailed information and practical details to enhance your historical journey.
+            Whether you're a history enthusiast, a traveler, or a student, "Where to?" is your gateway to the past.</p>
+    </div>
+    </div>
+</div>
+</body>
+</html>

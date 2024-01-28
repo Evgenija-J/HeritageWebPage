@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css?version=51">
+</head>
+<body>
+<div class="full-page">
+
+    <div class="navbar">
+        <img th:src="@{/images/logo.png}" class="logo_img">
+        <h1 id="app_name">Where To?</h1>
+        <p id="username" th:text="${username}"></p>
+        <nav>
+            <ul id='MenuItems'>
+                <img th:src="@{/images/pic.png}" class="pic_img">
+                <li><a th:href="@{/home}">HOME</a></li>
+                <li><a th:href="@{/aboutus}">ABOUT US</a></li>
+                <li><a th:href="@{/contact}">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <select id="searchInput" name="categories">
+        <option value="empty">Display all</option>
+        <option value="castle">Замок</option>
+        <option value="archaeological_site">Археолошки локалитет</option>
+        <option value="monument">Споменик</option>
+        <option value="tower">Кула</option>
+        <option value="memorial">Спомен кросница</option>
+        <option value="church">Црква</option>
+        <option value="aqueduct">Акведукт</option>
+        <option value="monastery">Манастир</option>
+        <option value="ruins">Руини</option>
+        <option value="city_gate">Градска капија</option>
+        <option value="building">Градба</option>
+        <option value="battlefield">Бојно поле</option>
+        <option value="tomb">Гроб</option>
+        <option value="boundary_stone">Граничен камен</option>
+        <option value="locomotive">Локомотива</option>
+        <option value="wayside_shrine">Споменик покрај пат</option>
+        <option value="aircraft">Воздушно летало</option>
+    </select>
+
+    <button id="search-btn">Search</button>
+
+    <div id="listings" class="scrollable-div" style="display: none"></div>
+
+    <section>
+
+        <div id="map" class="map"></div>
+
+        <script src="/js/map.js"></script>
+
+        <script src="../static/js/lat_lon.js" th:inline="javascript">
+        </script>
+    </section>
+
+</div>
+</body>
+</html>
+
+
