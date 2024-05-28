@@ -2,8 +2,6 @@
 
 This project is following the MVC pattern. 
 
-Video containing the app functionalities: https://heritageapp.azurewebsites.net/.
-
 ## Contributors
 Nina Kraleva 211502<br>
 Evgenija Jankulovska 211503<br>
