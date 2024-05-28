@@ -1,8 +1,8 @@
 # HeritageWebPage
 
-We have created a separate folder for this homework because we had no correct implementation for homework3 (can be found on this link https://github.com/esraimeri/Software-Design-and-Architecture/tree/main/src). Our current project is following the MVC pattern. 
+This project is following the MVC pattern. 
 
-We have also uploaded a video of all the functionalities because we did not manage to host the web application. The video also includes a shot of our database and local database connection. This is the page we are getting when trying to open our web application with Microsoft Azure https://heritageapp.azurewebsites.net/.
+Video containing the app functionalities: https://heritageapp.azurewebsites.net/.
 
 ## Contributors
 Nina Kraleva 211502<br>
