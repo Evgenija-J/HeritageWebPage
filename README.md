@@ -1,6 +1,6 @@
 # HeritageWebPage
 
-This project is following the MVC pattern. 
+This project is following the MVC pattern. Here is a link to the remaining implementation https://github.com/esraimeri/Software-Design-and-Architecture.git 
 
 ## Contributors
 Nina Kraleva 211502<br>
